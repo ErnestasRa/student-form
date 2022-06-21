@@ -80,10 +80,9 @@ label {
   
 }
 
-.student-list {
+#students-list {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 .student-item {
   opacity: 0.7;
@@ -92,9 +91,17 @@ label {
   border: 1px solid black;
   padding: 1rem;
   width: 30rem;
-  margin-left: 40rem;
+  margin-left: 5rem;
   background: whitesmoke;
   border-radius: 30px;
   text-align: center;
   margin-bottom: 1rem;
 }
+button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: floralwhite;
+  border-radius: 15px;
+  opacity: 0.7;
+}
+

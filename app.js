@@ -307,20 +307,26 @@ const studentForm = document.querySelector('form');
       let privateInfoButton = document.createElement('button');
       privateInfoButton.textContent = 'Rodyti asmens duomenis';
     
-      // let hiddenData = true;
-      // privateInfoButton.addEventListener('click', () => {
-      //   if (hiddenData) {
-      //     phoneElement.innerHTML = `<strong>Phone:</strong> ${studentPhone}`;
-      //     emailElement.innerHTML = `<strong>Email:</strong> ${studentEmail}`;
-      //     privateInfoButton.textContent = 'Slėpti asmens duomenis';
-      //   } else {      
-      //     phoneElement.innerHTML = `<strong>Phone:</strong> ****`;
-      //     emailElement.innerHTML = `<strong>Email:</strong> ****`;
-      //     privateInfoButton.textContent = 'Rodyti asmens duomenis';
-      //   }
-    
-      //   hiddenData = !hiddenData;
-      // });
+      let editStudentButton = document.createElement('button')
+            editStudentButton.textContent = 'Edit Student'
+            editStudentButton.addEventListener('click', () => {
+                document.querySelector('#student-name').value = `${studentName}`
+                document.querySelector('#student-surname').value = `${studentSurname}`
+                document.querySelector('#student-age').value = `${studentAge}`
+                document.querySelector('#student-phone').value = `${studentPhone}`
+                document.querySelector('#student-email').value = `${studentEmail}`
+                document.querySelector('#student-it-knowledge').value = `${studentItKnowledge}`
+                document.querySelector('#it-knowledge-output').value = `${studentItKnowledge}`
+                let editText = `Student editted ${studentName} ${studentSurname}`
+                alertMessage(editText)  
+                document.querySelector("input[type=submit]").value = 'Finish Editing'
+             const submitButton = document.querySelector("input[type=submit]")
+              submitButton.addEventListener('click', () => {
+                document.querySelector("input[type=submit]").value = 'Submit Query'
+
+              })
+            })
+
     
       privateInfoButton.addEventListener('click', () => {
         if (!privateInfoButton.classList.contains('hide')) {
@@ -345,7 +351,7 @@ const studentForm = document.querySelector('form');
         alertMessage(messageText);
       })
     
-      studentItem.append(nameElement, surnameElement, ageElement, phoneElement, emailElement, itKnowledgeElement, groupElement, interestWrapperElement, privateInfoButton, deleteStudentButton);
+      studentItem.append(nameElement, surnameElement, ageElement, phoneElement, emailElement, itKnowledgeElement, groupElement, interestWrapperElement, privateInfoButton, deleteStudentButton, editStudentButton);
     
       studentsList.prepend(studentItem);
       // studentForm.reset();
