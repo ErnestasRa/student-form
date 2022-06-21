@@ -80,10 +80,9 @@
     
   }
 
-  .student-list {
+  #students-list {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+  
   }
   .student-item {
     opacity: 0.7;
@@ -92,7 +91,7 @@
     border: 1px solid black;
     padding: 1rem;
     width: 30rem;
-    margin-left: 40rem;
+    margin-left: 2rem;
     background: whitesmoke;
     border-radius: 30px;
     text-align: center;
