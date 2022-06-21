@@ -1,0 +1,19 @@
+ŠEŠTA UŽDUOTIS:
+1. Sukurti pradinius duomenu masyva, kuriame butu bent 5 studentu duomenys (objektu formatu).
+2. Sukurti funkcija, kuri priima šiuos duomenis ir užkrovus puslapi i ekrana iškart išveda duomenis iš šio masyvo.
+
+SEPTINTA UŽDUOTIS:
+1. Prie kiekvieno studento prideti mygtuka, kuri paspaudus leistu redaguoti studento duomenis.
+2. Redaguojant studenta, submit mygtuko tekstas turetu pasikeisti i „Save Changes".
+3. Pakeitus studento duomenis, turi iššokti <span> elementas, kuris informuoja apie studento duomenu redagavima: „Studento (Vardas Pavarde) duomenys sekmingai pakeisti". Šis span elementas dingsta po 5 sekundžiu.
+
+
+1. Sukurti Edit mygtuka.
+2. Prie mygtuko prideti event listener'i.
+3. Surinkti studento duomenis ir jais užpildyti formos laukelius.
+4. Pakeisti formos submit mygtuko teksta.
+5. Išsaugoti studento HTML elementa kintamajame.
+6. Submit event'o metu patikrinti ar kuriame nauja studenta, ar redaguojame jau sukurta.
+7. Jeigu studentas redaguojamas, ši nauja (redaguota) HTML elementa panaudoti perrašant sena studento HTML elementa (kuris išsaugotas 5 žingsnyje).
+
+8. Pakeisti formos submit mygtuko teksta i pradini ir pakeisti iššokancio pranešimo teksta.
