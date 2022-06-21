@@ -1,5 +1,7 @@
 
-
+  :root {
+    --color-error: crimson
+  }
 
 .input-error-message{
   color:var(--color-error)
@@ -31,7 +33,7 @@ form {
   border: 1px solid black;
   padding: 5rem;
   width: 30rem;
-  margin-left: 40rem;
+  margin-left: 25rem;
   background: whitesmoke;
   border-radius: 30px;
 }
@@ -55,10 +57,11 @@ input[type="submit"] {
 #alert {
   padding: 5rem;
   width: 30rem;
-  margin-left: 40rem;
+  margin-left: 25rem;
   margin-bottom: -15rem;
   font-size: 30px;
   position: relative;
+  font-style: oblique
 }
 
 .form-control {
