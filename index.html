@@ -29,30 +29,31 @@
       7. Radio tipo laukeliai, kuriuose pasirenkamas grupės numeris. Turi būti galimybė pasirinkti grupes nuo TYPE 1gr. iki TYPE 15gr.
   4. Šalia kiekvieno įvesties (input) elemento, pridėti label elementą, kuris žymi laukelio pavadinimą. -->
 
-    <h1>Labas</h1>
+    
   <form novalidate>
+    <h1>Student form</h1>
     <div class="form-control">
         <label for="student-name">Name:</label>
         <input class="required" type="text"  name="name" id="student-name" placeholder="Enter your name" >
     </div>
-    <div>
+    <div class="form-control">
         <label for="student-surname">Surname: </label>
         <input class="required" type="text"  name="surname" id="student-surname" placeholder="Enter your surname" >
     </div>
-    <div>
+    <div class="form-control">
         <label for="student-age">Student age:</label>
         <input class="required" type="number"  name="age" id="student-age" placeholder="Enter your age" >
     </div>
-    <div>
+    <div class="form-control">
         <label for="student-phone">Phone:</label>
         <input class="required" type="number" name="phone"  id="student-phone" placeholder="Enter your phone">
     </div>
-   <div>
+   <div class="form-control">
         <label for="student-email">Email</label>
         <input class="required" type="text" name="email"  id="student-email" placeholder="Enter your email" >
     </div>
 
-    <div>
+    <div class="form-control">
         <label for="it-knowledge">IT knowledge</label>
         <input type="range" name="it-knowledge" id="student-it-knowledge" min="1" max="10" value="5" step="1">
         <output id="it-knowledge-output"></output>
@@ -60,29 +61,32 @@
 
     <fieldset>
         <legend>Group:</legend>
-        <input type="radio" name="group" checked id="student-group-1" value="type 1">
         <label for="student-group-1" >TYPE 1 gr.</label>
-        <input type="radio" name="group" id="student-group-2" value="type 2">
+        <input type="radio" name="group" checked id="student-group-1" value="type 1">
+        <br>
         <label for="student-group-2">TYPE 2 gr.</label>
-        <input type="radio" name="group" id="student-group-3" value="type 3">
+        <input type="radio" name="group" id="student-group-2" value="type 2">
+        <br>
         <label for="student-group-3">TYPE 3 gr.</label>
+        <input type="radio" name="group" id="student-group-3" value="type 3">
+        
     </fieldset>
 
 
     <fieldset>
         <legend>Pasirinkite kalba:</legend>
-
-        <input type="checkbox" name="interest" id="interest1" value="Javascript">
         <label for="interest1">Javascript</label>
-
-        <input type="checkbox" name="interest" id="interest2" value="python">
+        <input type="checkbox" name="interest" id="interest1" value="Javascript">
+        
         <label for="intereset2">Python</label>
-
-        <input type="checkbox" name="interest" id="interest3" value="C++">
+        <input type="checkbox" name="interest" id="interest2" value="python">
+        
         <label for="intereset3">C++</label>
-
-        <input type="checkbox" name="interest" id="interest4" value="C#">
+        <input type="checkbox" name="interest" id="interest3" value="C++">
+        
         <label for="intereset4">C#</label>
+        <input type="checkbox" name="interest" id="interest4" value="C#">
+        
 
 
     </fieldset>
