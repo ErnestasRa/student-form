@@ -1,99 +1,106 @@
- :root {
-    --color-error: crimson
-}
+
 
 
 .input-error-message{
-    color:var(--color-error)
+  color:var(--color-error)
 }
 
 .error-alert {
-    color: var(--color-error)
+  color: var(--color-error)
 }
 .input-error {
-    border-color: var(--color-error);
+
+  border-color: var(--color-error);
 }
 
 *, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-image:url(https://images.hdqwalls.com/wallpapers/snowy-blue-mountains-4k-e5.jpg);
-    
-  }
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-  form {
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    padding: 5rem;
-    width: 30rem;
-    margin-left: 40rem;
-    background: whitesmoke;
-    border-radius: 30px;
-  }
-  h1 {
-    color: black;
-  font-style: italic;
+body {
+  background-image:url(https://images.hdqwalls.com/wallpapers/snowy-blue-mountains-4k-e5.jpg);
+  
+}
+
+form {
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 5rem;
+  width: 30rem;
+  margin-left: 40rem;
+  background: whitesmoke;
+  border-radius: 30px;
+}
+h1 {
+  color: black;
+font-style: italic;
+text-align: center;
+ 
+} 
+
+input[type="submit"] {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: floralwhite;
+  border-radius: 15px;
+  opacity: 0.7;
+}
+
+
+
+#alert {
+  padding: 5rem;
+  width: 30rem;
+  margin-left: 40rem;
+  margin-bottom: -15rem;
+  font-size: 30px;
+  position: relative;
+}
+
+.form-control {
+  display: contents;
+  
+}
+
+input {
+  border-radius: 13px;
   text-align: center;
-   
-  } 
-
-  input[type="submit"] {
-    margin-top: 1rem;
-    padding: 1rem;
-    background: floralwhite;
-    border-radius: 15px;
-    opacity: 0.7;
-  }
-
+}
+label {
+  text-align: center;
+  font-size: 17px;
+}
+.input-error-message {
+  text-align: center;
   
+}
 
-  #alert {
-    padding: 5rem;
-    width: 30rem;
-    margin-left: 40rem;
-    margin-bottom: -15rem;
-    font-size: 30px;
-    position: relative;
-  }
+#students-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.student-item {
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 30rem;
+  margin-left: 5rem;
+  background: whitesmoke;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+button {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: floralwhite;
+  border-radius: 15px;
+  opacity: 0.7;
+}
 
-  .form-control {
-    display: contents;
-    
-  }
-
-  input {
-    border-radius: 13px;
-    text-align: center;
-  }
-  label {
-    text-align: center;
-    font-size: 17px;
-  }
-  .input-error-message {
-    text-align: center;
-    
-  }
-
-  #students-list {
-    display: flex;
-  
-  }
-  .student-item {
-    opacity: 0.7;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    padding: 1rem;
-    width: 30rem;
-    margin-left: 2rem;
-    background: whitesmoke;
-    border-radius: 30px;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
