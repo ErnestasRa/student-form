@@ -86,12 +86,26 @@
         
         <label for="intereset4">C#</label>
         <input type="checkbox" name="interest" id="interest4" value="C#">
-        
-
-
+    
     </fieldset>
     <input type="submit">
   </form>
+
+    <form id="search-form">
+        <label for="search">Ieskoti Studento</label>
+        <select name="select" id="select-option">
+            <option value="name">Vardas</option>
+            <option value="surname">Pavarde</option>
+            <option value="age">Metai</option>
+            <option value="group">Grupe</option>
+        </select>
+    
+        <input type="text" name="search" id="search-input">
+
+        <button type="submit">Ieskoti</button>
+    </form>
+
+
   <span id="alert"></span>
   <div id="students-list"></div>
   <script src="app.js"></script>
