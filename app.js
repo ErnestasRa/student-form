@@ -366,11 +366,6 @@ studentForm.addEventListener('submit', (event) => {
     alertMessage(alertText);
   }
 
-
-
-
-
- 
   event.target.reset();
 });
 
@@ -413,27 +408,27 @@ searchForm.addEventListener('submit', (event) => {
   allStudents.forEach(student => {
     let studentName = student.querySelector('.student-name').textContent.toLowerCase()
     let studentSurname = student.querySelector('.student-surname').textContent.toLowerCase()
-    let studentGroup = student.querySelector('.student-group').textContent
+    let studentGroup = student.querySelector('.student-group').textContent.toLowerCase()
     let studentAge = student.querySelector('.student-age').innerText
     
 
       if(selectOptions.value === 'name' && studentName.includes(searchInput)) {
       student.style.display = 'block'
-    } else {
-      student.style.display = 'none'
-      if(selectOptions.value === 'surname' && studentSurname.includes(searchInput)) {
-        student.style.display = 'block'
       } else {
         student.style.display = 'none'
-        if(selectOptions.value === 'group' && studentGroup.includes(searchInput)) {
+        if(selectOptions.value === 'surname' && studentSurname.includes(searchInput)) {
           student.style.display = 'block'
         } else {
           student.style.display = 'none'
-          if(selectOptions.value === 'age' && studentAge.includes(searchInput)) {
+          if(selectOptions.value === 'group' && studentGroup.includes(searchInput)) {
             student.style.display = 'block'
           } else {
             student.style.display = 'none'
-          }
+            if(selectOptions.value === 'age' && studentAge.includes(searchInput)) {
+              student.style.display = 'block'
+            } else {
+              student.style.display = 'none'
+            }
         }
       }
     }
